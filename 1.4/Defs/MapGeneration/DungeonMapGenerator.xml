@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <MapGeneratorDef>
+        <defName>RuinsDungeonMap</defName>
+        <genSteps>
+            <li>TerrainDeep</li>
+			<li>TerrainDungeon</li>
+			<li>TerrainDungeonAccent</li>
+            <li>ProceduralDungeon</li>
+			<li>ProceduralDungeonDoors</li>
+			<li>ProceduralDungeonLamp</li>
+			<li>ProceduralDungeonColumn</li>
+			<li>ProceduralDungeonUrn</li>
+			<li>ProceduralSingleMonument</li>
+            <li>DungeonStart</li>
+            <li>DungeonEnd</li>
+			<li>DungeonBounds</li>
+            <li>DungeonPlants</li>
+            <li>DungeonSnow</li>
+            <li>FogDeep</li>
+        </genSteps>
+    </MapGeneratorDef>
+    <GenStepDef>
+        <defName>TerrainDeep</defName>
+        <order>210</order>
+        <genStep Class="GenStep_Terrain" />
+    </GenStepDef>
+	<GenStepDef>
+        <defName>TerrainDungeon</defName>
+        <order>250</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_DungeonTerrain" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>RuinsDungeon</defName>
+        <order>300</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_RuinsDungeon">
+            <allowInWaterBiome>false</allowInWaterBiome>
+            <countPer10kCellsRange>10~15</countPer10kCellsRange>
+        </genStep>
+    </GenStepDef>
+    <GenStepDef>
+        <defName>DungeonStart</defName>
+        <order>400</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_Start" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>DungeonEnd</defName>
+        <order>500</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_End" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>DungeonBounds</defName>
+        <order>600</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_Bounds" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>ProceduralDungeon</defName>
+        <order>700</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_ProceduralDungeon" />
+    </GenStepDef>
+	<GenStepDef>
+        <defName>TerrainDungeonAccent</defName>
+        <order>705</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_DungeonTerrainAccent" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>ProceduralDungeonDoors</defName>
+        <order>710</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_DungeonDoors" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>ProceduralDungeonLamp</defName>
+        <order>710</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_DungeonLamp" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>ProceduralDungeonColumn</defName>
+        <order>720</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_DungeonColumn" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>ProceduralDungeonUrn</defName>
+        <order>730</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_DungeonUrn" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>ProceduralSingleMonument</defName>
+        <order>790</order>
+        <genStep Class="RimworldDungeoneering.GenSteps.GenStep_SingleMonument" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>DungeonPlants</defName>
+        <order>800</order>
+        <genStep Class="GenStep_Plants" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>DungeonSnow</defName>
+        <order>900</order>
+        <genStep Class="GenStep_Snow" />
+    </GenStepDef>
+    <GenStepDef>
+        <defName>FogDeep</defName>
+        <order>1500</order>
+        <genStep Class="GenStep_Fog" />
+    </GenStepDef>
+</Defs>

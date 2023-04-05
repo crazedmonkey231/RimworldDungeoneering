@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <GameConditionDef>
+        <defName>DungeonAurora</defName>
+        <conditionClass>GameCondition_Aurora</conditionClass>
+        <label>aurora</label>
+        <description>An aurora is lighting up the sky. The breathtaking display will boost the mood of anyone outside to see it.</description>
+        <endMessage>The aurora is ending.</endMessage>
+        <letterText>A beautiful aurora is lighting up the sky.\n\nThe undulating colors will boost the mood of anyone outside to see them, and make the night brighter.</letterText>
+        <letterDef>PositiveEvent</letterDef>
+        <canBePermanent>true</canBePermanent>
+    </GameConditionDef>
+</Defs>

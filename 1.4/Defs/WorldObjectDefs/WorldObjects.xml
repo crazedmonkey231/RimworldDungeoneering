@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <WorldObjectDef>
+        <defName>DungeonMapParent</defName>
+        <label>underground dungeon</label>
+        <description>An underground dungeon.</description>
+        <worldObjectClass>RimworldDungeoneering.MapManager.DungeonMapParent</worldObjectClass>
+        <texture>UI/hobbit-door</texture>
+        <expandingIcon>true</expandingIcon>
+        <expandingIconTexture>UI/hobbit-door</expandingIconTexture>
+        <expandingIconPriority>8</expandingIconPriority>
+        <comps />
+        <mapGenerator>RuinsDungeonMap</mapGenerator>
+    </WorldObjectDef>
+</Defs>

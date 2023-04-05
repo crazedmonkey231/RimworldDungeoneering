@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>AncientEntryway</defName>
+        <label>Ancient entryway</label>
+        <thingClass>RimworldDungeoneering.Buildings.Building_AncientEntryway</thingClass>
+        <category>Building</category>
+        <description>Entrance to the dungeon.</description>
+        <graphicData>
+            <texPath>Things/Building/Ruins/ArchEntry</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3, 3)</drawSize>
+        </graphicData>
+		<size>(3, 3)</size>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0, 0, -2)</interactionCellOffset>
+		<rotatable>False</rotatable>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.2</staticSunShadowHeight>
+        <startingHpRange>0.5~1.3</startingHpRange>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>42</pathCost>
+        <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.5</fillPercent>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Beauty>10</Beauty>
+            <Flammability>0</Flammability>
+            <WorkToBuild>600</WorkToBuild>
+        </statBases>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+        <costList>
+            <Steel>15</Steel>
+        </costList>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <repairEffect>ConstructDirt</repairEffect>
+    </ThingDef>
+</Defs>
